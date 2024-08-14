@@ -25,31 +25,27 @@ git clone https://github.com/bbbere/TrabajoPractico1DeJs.git
 ```
 2. Navega en el reproductor de música RollingTune:
 ```bash
-netlify
+https://rollingtune.netlify.app
 ```
-
 
 ## Autores ![alt text](https://64.media.tumblr.com/3c6ae8227309d9b4d548487a38da4733/a99701de4660a168-88/s75x75_c1/217cda36eb3ef94ae9bfc1b25e947cd897548d4f.gifv)
 
 [![Berenice Contreras](https://avatars.githubusercontent.com/u/161093188?v=4)](https://github.com/bbbere) 
 
-[**Berenice Contreras** ](https://github.com/bbbere) 
+[**Berenice Contreras** ](https://github.com/bbbere)
 
 [![Gabriel Haurane](https://avatars.githubusercontent.com/u/165182347?v=4165182347?v=4)](https://github.com/GabrielHaurane) 
 
-[**Gabriel Haurane** ](https://github.com/GabrielHaurane)
+[**Gabriel Haurane**](https://github.com/GabrielHaurane)
 
+[![Matias Nicolás Salazar](https://avatars.githubusercontent.com/u/166029034?v=4)](https://github.com/Matoma1607) 
 
-[![Matias](https://avatars.githubusercontent.com/u/165182347?v=4)](https://github.com/GabrielHaurane) 
+[**Matias Nicolás Salazar** ](https://github.com/Matoma1607)
 
-[**Matias** ](https://github.com/GabrielHaurane)
+[![Juan Cruz Paez Quiroga](https://avatars.githubusercontent.com/u/145721682?v=4)](https://github.com/juancruzssj)
+ 
+[**Juan Cruz Paez Quiroga** ](https://github.com/juancruzssj)
 
+[![Gustavo Gettar](https://avatars.githubusercontent.com/u/172273914?v=4)](https://github.com/gusgettar)
 
-[![Juancruz](https://avatars.githubusercontent.com/u/165182347?v=4)](https://github.com/GabrielHaurane) 
-
-[**Juancruz** ](https://github.com/GabrielHaurane)
-
-
-[![Gustavo Gettar](https://avatars.githubusercontent.com/u/165182347?v=4)](https://github.com/GabrielHaurane) 
-
-[**Gustavo Gettar** ](https://github.com/GabrielHaurane)
+[**Gustavo Gettar** ](https://github.com/gusgettar)
