@@ -18,7 +18,7 @@ const dibujarCancion = ()=>{
                         <h2 class="mt-3 card-text">Artista:${cancionBuscada.artista}</h2>
                         <h2 class="mt-3 card-text">Categoria:${cancionBuscada.categoria}</h2>
                         <h2 class="mt-3 card-text">Duracion:${cancionBuscada.duracion}</h2>
-                        <h2 class="mt-3 card-text">Cancion: ${cancionBuscada.audio} </h2>
+                        <h2 class="mt-3 card-text">Cancion: ${cancionBuscada.cancion} </h2>
                     </div>
                 </div>
             </div>
