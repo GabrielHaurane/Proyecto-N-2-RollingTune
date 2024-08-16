@@ -1,0 +1,17 @@
+
+footer{
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
+.contenido{
+    flex: 1;
+}
+
+
+
+    .sectionDetalles {
+    /* margin-top: 80px;  */
+    color: black;
+    background-color: #65212141;
+    }
