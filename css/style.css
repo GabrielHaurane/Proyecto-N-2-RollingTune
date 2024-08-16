@@ -1,17 +1,34 @@
-
-footer{
-    color: white;
-    text-align: center;
-    margin-top: auto;
+footer {
+  color: white;
+  text-align: center;
+  margin-top: auto;
 }
-.contenido{
-    flex: 1;
+.contenido {
+  flex: 1;
 }
 
+.sectionDetalles {
+  /* margin-top: 80px;  */
+  color: black;
+  background-color: #65212141;
+}
 
-
-    .sectionDetalles {
-    /* margin-top: 80px;  */
-    color: black;
-    background-color: #65212141;
-    }
+.btn-custom {
+  background-color: #979ea5; /* Gris oscuro */
+  border: 1px solid #6c757d;
+  color: white;
+}
+.btn-custom:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+.btn-group-custom {
+  display: flex;
+  gap: 0;
+}
+.btn-group-custom .btn {
+  border-radius: 0;
+}
+.btn-group-custom .btn:not(:last-child) {
+  border-right: 1px solid #6c757d;
+}
