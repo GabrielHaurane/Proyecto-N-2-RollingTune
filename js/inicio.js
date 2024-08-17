@@ -1,53 +1,53 @@
+
+// Variable para simular si el usuario está logueado
 var usuarioLogueado = false;
 
-document.querySelectorAll(".btn-play").forEach(function (btn) {
-  btn.addEventListener("click", function () {
-    var audioId = btn.getAttribute("data-audio");
-    var audioElement = document.getElementById(audioId);
-    var escucharMasBtn = btn.nextElementSibling;
-
+// Reproducción y pausa de audio después de 30 segundos
+document.querySelectorAll("audio").forEach(function (audioElement) {
+  audioElement.addEventListener("play", function () {
+    // Pausar todos los audios antes de reproducir el nuevo
     document.querySelectorAll("audio").forEach(function (audio) {
-      audio.pause();
-      audio.currentTime = 0;
-
-      var card = audio.closest(".card");
-      card.querySelector(".btn-play").style.display = "inline-block";
-      card.querySelector(".btn-escuchar-mas").style.display = "none";
+      if (audio !== audioElement) {
+        audio.pause();
+        audio.currentTime = 0;
+      }
     });
 
-    audioElement.play();
-    btn.style.display = "none";
-    escucharMasBtn.style.display = "inline-block";
-
+    // Pausar el audio después de 30 segundos
     var timeoutId = setTimeout(function () {
       if (!audioElement.paused) {
         audioElement.pause();
-        escucharMasBtn.style.display = "inline-block";
+        alert(
+          "El audio se ha detenido después de 30 segundos. Haz clic en 'Escuchar más' para seguir escuchando."
+        );
       }
-    }, 30000);
+    }, 30000); // 30 segundos = 30000 milisegundos
 
+    // Asociar el timeoutId con el elemento de audio
     audioElement.setAttribute("data-timeout-id", timeoutId);
+  });
 
-    alert(
-      "Estas escuchando nuestra Demo de 30 segundos. Haz clic en 'Escuchar más' para seguir escuchando."
-    );
+  // Limpiar el timeout si el usuario pausa manualmente
+  audioElement.addEventListener("pause", function () {
+    clearTimeout(audioElement.getAttribute("data-timeout-id"));
   });
 });
 
-// Función para escuchar más
+// Función para "Escuchar más"
 document.querySelectorAll(".btn-escuchar-mas").forEach(function (btn) {
   btn.addEventListener("click", function () {
     if (!usuarioLogueado) {
       if (confirm("¿Quieres iniciar sesión?")) {
-        window.location.href = "login.html";
+        window.location.href = "login.html"; // Redirige a la página de login
       }
     } else {
-      var audioId = btn.previousElementSibling.getAttribute("data-audio");
-      var audioElement = document.getElementById(audioId);
-
-      // Reproduce el audio
-      audioElement.play();
-      btn.style.display = "none";
+      var audioElement = btn.previousElementSibling;
+      if (audioElement.paused && audioElement.currentTime >= 30) {
+        // Continuar la reproducción si el audio se ha detenido después de 30 segundos
+        audioElement.play();
+      } else {
+        alert("El audio no está pausado o no ha alcanzado los 30 segundos.");
+      }
     }
   });
 });
