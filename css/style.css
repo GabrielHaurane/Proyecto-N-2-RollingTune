@@ -13,6 +13,7 @@ footer {
   background-color: #65212141;
 }
 
+/*Seccion botones de categoria*/
 .btn-custom {
   background-color: #979ea5; /* Gris oscuro */
   border: 1px solid #6c757d;
@@ -49,7 +50,7 @@ footer {
 
 .title-playlist {
   font-size: 2.4rem;
-  color: #d1c5c5;
+  color: #111111;
   font-weight: 600;
 }
 
@@ -68,46 +69,64 @@ footer {
   gap: 2.4rem;
 }
 
-.card-concentracion,
-.card-playlists {
-  background-color: #181818;
-  border-radius: 0.5rem;
-  padding: 1.6rem;
-  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-  position: relative;
+.card-concentracion {
+  flex: 1 1 100%; /* Permite que las tarjetas ocupen todo el ancho disponible */
+  max-width: 400px; /* Ajusta el ancho máximo de la tarjeta */
+  margin: 10px;
 }
 
 .card-concentracion:hover,
 .card-playlists:hover {
-  background-color: #282828;
+  background-color: #f0f0f0;
 }
 
 .card-img img {
-  width: 100%;
-  border-radius: 0.5rem;
-}
-
-.card-img {
-  overflow: hidden;
+  /* width: 100%;
+  border-radius: 0.5rem;*/
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+  height: auto;
+  border-radius: 5px;
 }
 
 .card h2 {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   font-size: 1.6rem;
-  color: #fff;
+  color: #181717;
   font-weight: 600;
 }
 
 .card p {
   font-size: 1.3rem;
-  color: #b3b3b3;
-  font-weight: 400;
-  line-height: 1.5;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
+  color: #080808;
+}
+
+.card {
+  width: 100%; /* Asegura que la tarjeta ocupe todo el ancho disponible */
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una ligera sombra */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: #fff; /* Fondo blanco */
+  box-sizing: border-box;
+}
+
+audio {
+  width: 100%; /* Asegura que los controles de audio ocupen todo el ancho de la tarjeta */
+  margin-top: 10px;
+}
+
+.btn-escuchar-mas {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #0062cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-escuchar-mas:hover {
+  background-color: #004999;
 }
