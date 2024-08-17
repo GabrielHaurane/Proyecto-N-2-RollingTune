@@ -55,42 +55,13 @@
           <tr>
             <th scope="col">#</th>
             <th scope="col">Titulo</th>
-            <th scope="col">Album</th>
+            <th scope="col">Artista</th>
             <th scope="col">Fecha</th>
             <th scope="col">Accion</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>
-                <button class="btn btn-warning" onclick="editarContacto('${contacto.id}')">E</button>
-                <button class="btn btn-danger" onclick="borrarContacto('${contacto.id}')">B</button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>
-                <button class="btn btn-warning" onclick="editarContacto('${contacto.id}')">E</button>
-                <button class="btn btn-danger" onclick="borrarContacto('${contacto.id}')">B</button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>
-                <button class="btn btn-warning" onclick="editarContacto('${contacto.id}')">E</button>
-                <button class="btn btn-danger" onclick="borrarContacto('${contacto.id}')">B</button>
-            </td>
-          </tr>
+         
           
         </tbody>
       </table>
@@ -106,8 +77,8 @@
             <div class="modal-body">
              <form>
                 <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre Cancion</label>
-                    <input class="form-control" id="nombre"                       type="text">
+                    <label for="nombrecancion" class="form-label">Nombre Cancion</label>
+                    <input class="form-control" id="nombrecancion"                       type="text">
                     <div class="valid-feedback">Es valido</div>
                     <div class="invalid-feedback">no es valido</div>
                 </div>
@@ -139,7 +110,7 @@
                     <label for="imagen" class="form-label">Imagen</label>
                     <input class="form-control" id="imagen" type="text">
                 </div>
-                <button class="btn btn-primary" type="submit">Enviar</button>
+                <button class="btn btn-primary" type="submit" id="btnguardar">Guardar</button>
              </form>
             </div>
           </div>
