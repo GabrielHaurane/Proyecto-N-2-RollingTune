@@ -9,9 +9,34 @@ footer{
 }
 
 
-
     .sectionDetalles {
     /* margin-top: 80px;  */
     color: black;
     background-color: #65212141;
+    }
+
+
+    .error-section {
+        text-align: center;
+        padding: 50px 15px;
+        min-height: calc(100vh - 80px); /* Ajuste para ocupar la pantalla completa menos la altura de la navbar */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .error-message {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 20px 0;
+        color: #fff;
+        text-shadow:-1px 6px 9px black
+    }
+    .btn-home {
+        background-color: #fff;
+        color: #000;
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        border-radius: 50px;
+        text-decoration: none;
     }
