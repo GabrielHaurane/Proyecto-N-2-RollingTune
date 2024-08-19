@@ -62,4 +62,21 @@ nav {
   font-size: 25px;
   }
   
+
+  @media (min-width: 576px) { 
+    .bg-footer{
+    background: rgb(107,61,81);
+  background: radial-gradient(circle, rgba(107,61,81,1) 0%, rgba(51,8,8,1) 90%);
+   }
+}
   
+
+@media (min-width: 992px) { 
+  .bg-footer{
+    background: none;
+   }
+   footer{
+    background: rgb(107,61,81);
+  background: radial-gradient(circle, rgba(107,61,81,1) 0%, rgba(51,8,8,1) 90%);
+   }
+ }
