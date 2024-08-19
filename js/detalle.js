@@ -4,6 +4,11 @@ const paramId = new URLSearchParams(window.location.search).get('id');
 const listaCanciones = JSON.parse(localStorage.getItem('agendaKey')) || [];
 const cancionBuscada = listaCanciones.find((cancion)=>cancion.id === paramId);
 
+
+
+
+
+
 const dibujarCancion = ()=>{
     const contenedor = document.querySelector(".contenedorCancion")
     console.log(contenedor);
@@ -19,9 +24,14 @@ const dibujarCancion = ()=>{
                         <h2 class="mt-3 card-text">Categoria:${cancionBuscada.categoria}</h2>
                         <h2 class="mt-3 card-text">Duracion:${cancionBuscada.duracion}</h2>
                         <h2 class="mt-3 card-text">Cancion: ${cancionBuscada.audio} </h2>
+                        
                     </div>
                 </div>
             </div>
         </div>`
 }
+
+
+
+
 dibujarCancion();
