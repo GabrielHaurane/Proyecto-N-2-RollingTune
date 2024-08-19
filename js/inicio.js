@@ -1,6 +1,6 @@
 
 // Variable para simular si el usuario está logueado
-var usuarioLogueado = false;
+const usuarioLogueado = false;
 
 // Reproducción y pausa de audio después de 30 segundos
 document.querySelectorAll("audio").forEach(function (audioElement) {
@@ -14,7 +14,7 @@ document.querySelectorAll("audio").forEach(function (audioElement) {
     });
 
     // Pausar el audio después de 30 segundos
-    var timeoutId = setTimeout(function () {
+    const timeoutId = setTimeout(function () {
       if (!audioElement.paused) {
         audioElement.pause();
         alert(
