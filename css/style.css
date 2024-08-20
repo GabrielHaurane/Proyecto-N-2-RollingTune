@@ -75,24 +75,42 @@ footer {
 }
 
 /*Seccion botones de categoria*/
-.btn-custom {
-  background-color: #979ea5; /* Gris oscuro */
-  border: 1px solid #6c757d;
-  color: white;
+.seccion-botones {
+  padding: 20px;
 }
-.btn-custom:hover {
-  background-color: #5a6268;
-  border-color: #545b62;
+
+.seccion-botones ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el espaciado interno */
+  margin: 0; /* Elimina el margen externo */
+  display: flex; /* Utiliza flexbox para alinear los botones */
+  gap: 10px; /* Espacio entre los botones */
+  justify-content: center; /* Centra los botones horizontalmente */
+  flex-wrap: wrap; /* Permite que los botones se envuelvan en dispositivos pequeños */
 }
-.btn-group-custom {
-  display: flex;
-  gap: 0;
+
+.btn {
+  display: inline-block; /* Asegura que el enlace se comporta como un botón en línea */
+  padding: 10px 20px; /* Tamaño del botón */
+  font-size: 14px; /* Tamaño de la fuente del botón */
+  text-align: center; /* Centra el texto dentro del botón */
+  color: white; /* Color del texto */
+  background-color: #007bff; /* Color de fondo del botón */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  text-decoration: none; /* Quita el subrayado del enlace */
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
 }
-.btn-group-custom .btn {
-  border-radius: 0;
+
+.btn:hover {
+  background-color: #235fa0; /* Color de fondo al pasar el cursor */
 }
-.btn-group-custom .btn:not(:last-child) {
-  border-right: 1px solid #6c757d;
+
+@media (max-width: 600px) {
+  .btn {
+      padding: 6px 12px; /* Ajusta el tamaño del botón para pantallas pequeñas */
+      font-size: 12px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+  }
 }
 
 /* ********************************** */
