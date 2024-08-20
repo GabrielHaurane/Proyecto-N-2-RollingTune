@@ -40,3 +40,7 @@ footer{
         border-radius: 50px;
         text-decoration: none;
     }
+
+    #play-button-1, #play-button-2, #play-button-3, #play-button-4, #play-button-5 {
+        cursor: pointer;
+      }
