@@ -1,4 +1,3 @@
-
 // Variable para simular si el usuario está logueado
 const usuarioLogueado = false;
 
@@ -51,3 +50,39 @@ document.querySelectorAll(".btn-escuchar-mas").forEach(function (btn) {
     }
   });
 });
+
+// Simulación de si el usuario está logueado
+/*let usuarioLogueado = false;
+
+// Función para pausar el iframe y mostrar alerta después de 30 segundos
+function pausarIframeYMostrarAlerta() {
+  const iframes = document.querySelectorAll('iframe');
+  for (const iframe of iframes) {
+    iframe.contentWindow.postMessage('pausa', '*');
+  }
+  setTimeout(() => {
+    if (!usuarioLogueado) {
+      alert("Debes iniciar sesión para seguir escuchando.");
+    }
+  }, 30000); // 30 segundos
+}
+
+// Evento para cuando se carguen los iframes
+window.addEventListener('message', (event) => {
+  if (event.data === 'play') {
+    pausarIframeYMostrarAlerta();
+  }
+});
+
+// Iniciar control de reproducción para cada botón "Escuchar más"
+document.querySelectorAll('.btn-escuchar-mas').forEach(button => {
+  button.addEventListener('click', () => {
+    if (!usuarioLogueado) {
+      alert("Debes iniciar sesión para seguir escuchando. ¿Deseas iniciar sesión ahora?");
+      window.location.href = 'login.html'; // Redirigir a la página de inicio de sesión
+    } else {
+      const iframe = button.parentNode.querySelector('iframe');
+      iframe.contentWindow.postMessage('play', '*');
+    }
+  });
+});*/
