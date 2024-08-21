@@ -69,7 +69,7 @@ footer {
 }
 
 .sectionDetalles {
-   margin-top: 80px; 
+  margin-top: 80px;
   color: black;
   background-color: #65212141;
 }
@@ -80,36 +80,36 @@ footer {
 }
 
 .seccion-botones ul {
-  list-style: none; 
-  padding: 0; 
-  margin: 0; 
-  display: flex; 
-  gap: 10px; 
-  justify-content: center; 
-  flex-wrap: wrap; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .btn {
-  display: inline-block; 
-  padding: 20px 30px; 
-  font-size: 18px; 
-  text-align: center; 
-  color: white; 
-  background-color: #125fb1; 
-  border: none; 
-  border-radius: 4px; 
-  text-decoration: none; 
-  transition: background-color 0.3s ease; 
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  background-color: #125fb1;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #214c7a; 
+  background-color: #214c7a;
 }
 
 @media (max-width: 600px) {
   .btn {
-    padding: 6px 12px; 
-    font-size: 12px; 
+    padding: 6px 12px;
+    font-size: 12px;
   }
 }
 
@@ -127,7 +127,6 @@ footer {
   gap: 3rem;
 }
 
-
 .card-img-top {
   width: 100%;
   border-radius: 0.5rem;
@@ -135,7 +134,6 @@ footer {
   height: auto;
   border-radius: 20px;
 }
-
 
 .card {
   width: 100%;
@@ -177,13 +175,17 @@ audio {
   font-size: 20px;
   border: none;
   outline: none;
-  background-color: #da1212; /* Color de fondo preferido */
-  color: white;
+  background-color: #050506;
+  background-image: linear-gradient(
+    43deg,
+    #050506 0%,
+    #853a9a 46%,
+    #ef0000 100%
+  );
+
+  color: rgb(236, 231, 231);
   cursor: pointer;
   padding: 15px;
   border-radius: 50%;
 }
 
-#backToTopBtn:hover {
-  background-color: #0b68c0; /* Color de fondo al hacer hover */
-}
