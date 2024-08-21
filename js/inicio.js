@@ -43,3 +43,31 @@ document.querySelectorAll(".btn-escuchar-mas").forEach(function (btn) {
     }
   });
 });
+
+// Redirigir al archivo de detalles al hacer clic en la imagen de la tarjeta
+document.querySelectorAll(".card img").forEach(function (img) {
+  img.addEventListener("click", function () {
+    const card = img.closest(".card");
+    const songId = card.getAttribute("data-song-id");
+    window.location.href = `detalles.html?id=${songId}`;
+  });
+});
+
+// Mostrar el botón cuando el usuario se desplaza hacia abajo más de 200px
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  const backToTopBtn = document.getElementById("backToTopBtn");
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+}
+
+// Función para desplazarse hacia arriba al hacer clic en el botón
+document.getElementById("backToTopBtn").addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
