@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 body{
   min-height: 100vh;
-  font-family: "New Amsterdam", sans-serif;
+
   font-weight: 100;
   font-style: normal;
   padding: 0;
@@ -18,8 +17,6 @@ body{
   
   
 }
-
-
 nav {
   background-color: rgb(0, 0, 0); /* Color inicial del nav con menos opacidad */
   position: fixed;
