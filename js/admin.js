@@ -31,8 +31,7 @@ const Ecategoria = document.querySelector("#editarCategoria")
 const Eduracion = document.querySelector("#editarDuracion")
 const Eaudio = document.querySelector("#editarAudio")
 const Eimagen = document.querySelector("#editarImagen")
-const EidCancion = document.querySelector("#idCancion")
-let cancionNueva = true
+
 
 
 
@@ -114,7 +113,7 @@ window.editarCancion = (id)=>{
     Ecategoria.value = `${listaCanciones[buscarIndiceCancion].categoria}`
     Eduracion.value = `${listaCanciones[buscarIndiceCancion].duracion}`
     Eaudio.value = `${listaCanciones[buscarIndiceCancion].audio}`
-    Eimagen.value = `${listaCanciones[buscarIndiceCancion].imagen}`
+    Eimagen.value = `${listaCanciones[buscarIndiceCancion].imgcancion}`
     formEditarCanciones.addEventListener('submit', function (e){
         e.preventDefault()
         console.log(listaCanciones[buscarIndiceCancion].id)
