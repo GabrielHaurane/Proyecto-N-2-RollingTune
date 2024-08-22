@@ -11,7 +11,8 @@ const modalAdminCancion = new bootstrap.Modal(
 const btnAgregarCancion = document.querySelector('#btnAgregarCancion')
 const formCanciones = document.querySelector("form")
 const formEditarCanciones = document.querySelector("#formEditar")
-const tabla = document.querySelector(".table")
+const tabla = document.querySelector(".tablaPrincipal")
+
 
 //VARIABLES
 const listaCanciones = JSON.parse(localStorage.getItem("cancionKey")) || [];
@@ -84,10 +85,16 @@ window.borrarCancion = (id)=>{
         cancelButtonText: "Cancelar"
       }).then((result) => {
         if (result.isConfirmed) {
+            console.log(id)
+
             const posicionCancion = listaCanciones.findIndex((cancion) => cancion.id === id)
+
             console.log(posicionCancion)
+
             listaCanciones.splice(posicionCancion,1)
+
             guardarEnLocalStorage()
+
             tabla.removeChild(tabla.children[posicionCancion])
             
             Swal.fire({
@@ -133,7 +140,6 @@ window.editarCancion = (id)=>{
 
 
 
-//CARGAR EL MODAL
 
 
 //READ LOCALSTORAGE
