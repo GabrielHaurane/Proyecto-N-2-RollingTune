@@ -1,3 +1,5 @@
+import { funcionScroll } from "./navbar.js";
+funcionScroll;
 const usuarioLogueado = false;
 
 document.querySelectorAll("audio").forEach(function (audioElement) {

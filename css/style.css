@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
 html body {
   min-height: 100vh;
-  font-family: "New Amsterdam", sans-serif;
+
   font-weight: 100;
   font-style: normal;
   padding: 0;
@@ -94,7 +94,7 @@ footer {
   flex-wrap: wrap;
 }
 
-.btn {
+.btnCategoria {
   display: inline-block;
   padding: 20px 30px;
   font-size: 18px;
@@ -112,7 +112,7 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .btn {
+  .btnCategoria {
     padding: 6px 12px;
     font-size: 12px;
   }
