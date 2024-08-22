@@ -71,6 +71,7 @@ const agregarNuevaCancion = (e)=>{
 
 }
 
+
 //BORRAR UNA CANCION
 window.borrarCancion = (id)=>{
     
@@ -84,17 +85,17 @@ window.borrarCancion = (id)=>{
         confirmButtonText: "Borrar",
         cancelButtonText: "Cancelar"
       }).then((result) => {
-        if (result.isConfirmed) {
-            console.log(id)
-
-            const posicionCancion = listaCanciones.findIndex((cancion) => cancion.id === id)
+          if (result.isConfirmed) {
+              console.log(id)
+              
+              const posicionCancion = listaCanciones.findIndex((cancion) => cancion.id === id)
 
             console.log(posicionCancion)
 
             listaCanciones.splice(posicionCancion,1)
-
+            
             guardarEnLocalStorage()
-
+            
             tabla.removeChild(tabla.children[posicionCancion])
             
             Swal.fire({
@@ -102,15 +103,15 @@ window.borrarCancion = (id)=>{
                 text: "La cancion seleccionada fue borrada",
                 icon: "success"
                 
-              });
-              location.reload()
-            }
-          })
+            });
+            location.reload()
+        }
+    })
 }
 //EDITAR UNA CANCION
 window.editarCancion = (id)=>{
     
-   
+    
     mostrarModalEditar()
     const buscarIndiceCancion = listaCanciones.findIndex((canciones)=> canciones.id === id)
     Enombre.value = `${listaCanciones[buscarIndiceCancion].nombre}`
@@ -146,17 +147,18 @@ window.editarCancion = (id)=>{
 const cargaInicial = ()=>{
     if(listaCanciones.length!==0){
         listaCanciones.map((canciones)=>dibujarFila(canciones))
-           
+        
     }
 }
+
 const dibujarFila = (canciones)=>{
-  
-tabla.innerHTML += ` <tr>
-<th scope="row">1</th>
-<td>${canciones.nombre}</td>
-<td>${canciones.artista}</td>
-<td>${canciones.fecha}</td>
-<td>
+    
+    tabla.innerHTML += ` <tr>
+    <th scope="row">${canciones.id}</th>
+    <td>${canciones.nombre}</td>
+    <td>${canciones.artista}</td>
+    <td>${canciones.fecha}</td>
+    <td>
     <button class="btn btn-warning" onclick="editarCancion('${canciones.id}')"><i class="bi bi-pen"></i></button>
     <button class="btn btn-danger" onclick="borrarCancion('${canciones.id}')"><i class="bi bi-trash3"></i></button>
 </td>
