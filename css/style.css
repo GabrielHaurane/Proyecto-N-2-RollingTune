@@ -74,7 +74,7 @@ footer {
 }
 
 .sectionDetalles {
-  /* margin-top: 80px;  */
+  margin-top: 80px;
   color: black;
   background-color: #65212141;
 }
@@ -85,36 +85,36 @@ footer {
 }
 
 .seccion-botones ul {
-  list-style: none; /* Elimina los puntos de la lista */
-  padding: 0; /* Elimina el espaciado interno */
-  margin: 0; /* Elimina el margen externo */
-  display: flex; /* Utiliza flexbox para alinear los botones */
-  gap: 10px; /* Espacio entre los botones */
-  justify-content: center; /* Centra los botones horizontalmente */
-  flex-wrap: wrap; /* Permite que los botones se envuelvan en dispositivos pequeños */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .btn {
-  display: inline-block; /* Asegura que el enlace se comporta como un botón en línea */
-  padding: 10px 20px; /* Tamaño del botón */
-  font-size: 14px; /* Tamaño de la fuente del botón */
-  text-align: center; /* Centra el texto dentro del botón */
-  color: white; /* Color del texto */
-  background-color: #007bff; /* Color de fondo del botón */
-  border: none; /* Sin borde */
-  border-radius: 4px; /* Bordes redondeados */
-  text-decoration: none; /* Quita el subrayado del enlace */
-  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  background-color: #125fb1;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #235fa0; /* Color de fondo al pasar el cursor */
+  background-color: #214c7a;
 }
 
 @media (max-width: 600px) {
   .btn {
-      padding: 6px 12px; /* Ajusta el tamaño del botón para pantallas pequeñas */
-      font-size: 12px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    padding: 6px 12px;
+    font-size: 12px;
   }
 }
 
@@ -132,77 +132,32 @@ footer {
   gap: 3rem;
 }
 
-.title-playlist {
-  font-size: 2.4rem;
-  color: #111111;
-  font-weight: 600;
-}
-
-.container-name-concentracion,
-.container-name-playlists {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.container-card-concentracion,
-.container-card-playlists {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 2.4rem;
-}
-
-.card-concentracion {
-  flex: 1 1 100%; /* Permite que las tarjetas ocupen todo el ancho disponible */
-  max-width: 400px; /* Ajusta el ancho máximo de la tarjeta */
-  margin: 10px;
-}
-
-.card-concentracion:hover,
-.card-playlists:hover {
-  background-color: #7c0ada;
-}
-
-.card-img img {
-  /* width: 100%;
-  border-radius: 0.5rem;*/
-  width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+.card-img-top {
+  width: 100%;
+  border-radius: 0.5rem;
+  width: 100%;
   height: auto;
-  border-radius: 5px;
-}
-
-.card h2 {
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  font-size: 1.6rem;
-  color: #181717;
-  font-weight: 600;
-}
-
-.card p {
-  font-size: 1.3rem;
-  color: #080808;
+  border-radius: 20px;
 }
 
 .card {
-  width: 100%; /* Asegura que la tarjeta ocupe todo el ancho disponible */
+  width: 100%;
   padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una ligera sombra */
-  border-radius: 8px; /* Bordes redondeados */
-  background-color: #fff; /* Fondo blanco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
   box-sizing: border-box;
 }
 
 audio {
-  width: 100%; /* Asegura que los controles de audio ocupen todo el ancho de la tarjeta */
+  width: 100%;
   margin-top: 10px;
 }
 
 .btn-escuchar-mas {
   display: inline-block;
-  margin-top: 10px;
-  padding: 8px 12px;
+  margin-top: 5px;
+  padding: 8px 10px;
   background-color: #0062cc;
   color: #fff;
   border: none;
@@ -213,4 +168,28 @@ audio {
 
 .btn-escuchar-mas:hover {
   background-color: #004999;
+}
+
+/*Boton de inicio*/
+#backToTopBtn {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #050506;
+  background-image: linear-gradient(
+    43deg,
+    #050506 0%,
+    #853a9a 46%,
+    #ef0000 100%
+  );
+
+  color: rgb(236, 231, 231);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
 }

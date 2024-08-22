@@ -24,7 +24,7 @@
     <header>
       <nav></nav>
     </header>
-    <main>
+    <main class="mt-5">
       <div class="container mt-5 seccion-botones">
         <ul>
           <li><a href="#cat1" class="btn">Categoria 1</a></li>
@@ -34,555 +34,546 @@
         </ul>
       </div>
       <!-- Contenido Principal -->
-      <section class="main-content">
-        <!-- 1 Fila -->
-        <div class="container-name-concentracion">
-          <h1 class="title-playlist text-light">Canciones más populares</h1>
-          <div class="container-card-concentracion">
-            <!-- Canción 1 -->
-            <div class="card-concentracion">
+      <section>
+        <button id="backToTopBtn" title="Ir al inicio">↑</button>
+        <div class="main-content mt-5">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://lastfm.freetls.fastly.net/i/u/ar0/cb8f42646ff3fb6c49ff20314cd78b73.jpg"
-                    alt="Jacinto"
-                  />
+                <img
+                  src="https://lastfm.freetls.fastly.net/i/u/ar0/cb8f42646ff3fb6c49ff20314cd78b73.jpg"
+                  class="card-img-top"
+                  alt="Imagen 1"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    Self Control <br />Laura Branigan
+                  </h5>
+                  <p>Rock</p>
+                  <audio
+                    controls
+                    id="audio1"
+                    src="./audio.mp3/Self Control - Laura Branigan  GTA Vice City (Sub. Español  Lyrics).mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2 class="text-center">Self Control-Laura Branigan</h2>
-                <p>Rock</p>
-                <audio
-                  controls
-                  src="./audio.mp3/Self Control - Laura Branigan  GTA Vice City (Sub. Español  Lyrics).mp3"
-                  id="audio1"
-                ></audio>
-
-                <!--<iframe
-                  controls
-                  src="https://drive.google.com/file/d/1_qbzg3OVm3cmyNOuzNc-x2ZZstL9pI2w/preview"
-                  allow="autoplay"
-                ></iframe>-->
-
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-
-            <!-- Canción 2 -->
-            <div class="card-concentracion">
+            <!--Cancion 2-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://www.levinyleclub.com/wp-content/uploads/2020/12/iu5_1.jpeg"
-                    alt="Peppers"
-                  />
+                <img
+                  src="https://www.levinyleclub.com/wp-content/uploads/2020/12/iu5_1.jpeg"
+                  class="card-img-top"
+                  alt="Imagen 2"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    Otherside <br />
+                    Chilli Peppers
+                  </h5>
+                  <p>Rock</p>
+                  <audio
+                    controls
+                    id="audio2"
+                    src="./audio.mp3/Red Hot Chili Peppers - Otherside [Official Music Video].mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2 class="text-center">Otherside <br />Chilli Peppers</h2>
-                <p>Rock</p>
-                <audio
-                  controls
-                  id="audio2"
-                  src="./audio.mp3/Red Hot Chili Peppers - Otherside [Official Music Video].mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-
-            <!-- Canción 3 -->
-            <div class="card-concentracion">
+            <!--Cancion 3-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNYmW_8ebtdsmOiVg5MOqTBTZFmc8dGdt1tA&s"
-                    alt="papaRoach"
-                  />
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNYmW_8ebtdsmOiVg5MOqTBTZFmc8dGdt1tA&s"
+                  class="card-img-top"
+                  alt="Imagen 3"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    She Love Me To <br />Papa Roach
+                  </h5>
+                  <p>Rock</p>
+                  <audio
+                    controls
+                    id="audio3"
+                    src="./audio.mp3/Papa Roach - She Loves Me Not.mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2 class="text-center">She Love Me To <br />Papa Roach</h2>
-                <p>Rock.</p>
-                <audio
-                  controls
-                  id="audio3"
-                  src="./audio.mp3/Papa Roach - She Loves Me Not.mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-
-            <!-- Canción 4 -->
-            <div class="card-concentracion">
+            <!--Cancion4-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://media.s-bol.com/pkD6WPw9w6xN/550x550.jpg"
-                    alt="Gorillaz"
-                  />
+                <img
+                  src="https://media.s-bol.com/pkD6WPw9w6xN/550x550.jpg"
+                  class="card-img-top"
+                  alt="Imagen 4"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    Soulchild Remix <br />Gorillaz
+                  </h5>
+                  <p>Rock</p>
+                  <audio
+                    controls
+                    id="audio4"
+                    src="./audio.mp3/Gorillaz - 19-2000 (Soulchild Remix).mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2 class="text-center">Soulchild Remix <br />Gorillaz</h2>
-                <p>Rock</p>
-                <audio
-                  controls
-                  id="audio4"
-                  src="./audio.mp3/Gorillaz - 19-2000 (Soulchild Remix).mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-
-            <!-- Canción 5 -->
-            <div class="card-concentracion">
+            <!--Cancion 5-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://i.scdn.co/image/ab67616d0000b273c98277eb4535eaeb19f403cc"
-                    alt="Iam a Believer"
-                  />
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b273c98277eb4535eaeb19f403cc"
+                  class="card-img-top"
+                  alt="Imagen 4"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    Smash Mouth <br />I am a Believer
+                  </h5>
+                  <p>Pop</p>
+                  <audio
+                    controls
+                    id="audio5"
+                    src="./audio.mp3/Shrek  I'm A Believer [Smash Mouth]  Letra y traducción.mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2>Smash Mouth <br />I am a Believer</h2>
-                <p>Pop</p>
-                <audio
-                  controls
-                  id="audio5"
-                  src="./audio.mp3/Shrek  I'm A Believer [Smash Mouth]  Letra y traducción.mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-
-            <!-- Canción 6 -->
-            <div class="card-concentracion">
+            <!--Cancion 6-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://cdn11.bigcommerce.com/s-n6h3dlxzq9/images/stencil/1280x1280/products/36643/380235/SLPTDVNYL1286__74531.1610646939.jpg?c=2&imbypass=on"
-                    alt="Workday Lounge"
-                  />
+                <img
+                  src="https://cdn11.bigcommerce.com/s-n6h3dlxzq9/images/stencil/1280x1280/products/36643/380235/SLPTDVNYL1286__74531.1610646939.jpg?c=2&imbypass=on"
+                  class="card-img-top"
+                  alt="Imagen 4"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    Maniac <br />Michael Sembello
+                  </h5>
+                  <p>Pop</p>
+                  <audio
+                    controls
+                    id="audio6"
+                    src="./audio.mp3/Michael Sembello - Maniac (Lyrics).mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2>Maniac <br />Michael Sembello</h2>
-                <p>Pop</p>
-                <audio
-                  controls
-                  id="audio6"
-                  src="./audio.mp3/Michael Sembello - Maniac (Lyrics).mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-
-            <!-- Canción 7 -->
-            <div class="card-concentracion">
+            <!--Cancion 7-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://images.squarespace-cdn.com/content/v1/6561e7de0a3cbd1f9a06ef52/5006b7eb-d547-4349-955e-65a23a381446/final-jpg-wtwtg.jpg"
-                    alt="Starsailor"
-                  />
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/6561e7de0a3cbd1f9a06ef52/5006b7eb-d547-4349-955e-65a23a381446/final-jpg-wtwtg.jpg"
+                  class="card-img-top"
+                  alt="Imagen 4"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    Four to the Floor <br>Starsailor
+                  </h5>
+                  <p>Pop</p>
+                  <audio
+                    controls
+                    id="audio7"
+                    src="./audio.mp3/Four to the Floor (Thin White Duke Mix).mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2>Four to the Floor <br />Starsailor</h2>
-                <p>Pop</p>
-                <audio
-                  controls
-                  id="audio7"
-                  src="./audio.mp3/Four to the Floor (Thin White Duke Mix).mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-            <div class="card-concentracion">
+            <!--Cancion 8-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://insheepsclothinghifi.com/wordpress/wp-content/uploads/2021/12/eurythmics_front.jpg"
-                    alt="sween dreams"
-                  />
+                <img
+                  src="https://insheepsclothinghifi.com/wordpress/wp-content/uploads/2021/12/eurythmics_front.jpg"
+                  class="card-img-top"
+                  alt="Imagen 4"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    Sweet Dreams <br />Eurythmics
+                  </h5>
+                  <p>Pop</p>
+                  <audio
+                    controls
+                    id="audio8"
+                    src="./audio.mp3/Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This) (Official Video).mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2>Sweet Dreams <br />Eurythmics</h2>
-                <p>Pop</p>
-                <audio
-                  controls
-                  id="audio7"
-                  src="./audio.mp3/Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This) (Official Video).mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-          </div>
-        </div>
-        <!-- 2 Fila -->
-        <div class="container-name-playlists">
-          <h1 class="title-playlist text-light" id="cat1">
-            Categoria 1 Iconos del Rock Argentino
-          </h1>
-
-          <div class="container-card-playlists">
-            <!-- Playlist 1 -->
-            <div class="card-playlists">
+            <!--segunda fila
+            Cancion 1-->
+            <h1 class="my-5 text-light" id="cat1">
+              Categoria 1 Iconos del Rock Argentino
+            </h1>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://geo-media.beatsource.com/image_size/500x500/9/7/5/97593686-3e8a-4129-8084-a973ea222c85.jpg"
-                    alt="Enanitos verdes"
-                  />
+                <img
+                  src="https://geo-media.beatsource.com/image_size/500x500/9/7/5/97593686-3e8a-4129-8084-a973ea222c85.jpg"
+                  class="card-img-top"
+                  alt="Enanitos verdes"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    La Muralla Verde <br />Enanitos
+                  </h5>
+                  <p>Rock</p>
+                  <audio
+                    controls
+                    id="audio8"
+                    src="./audio.mp3/Los Enanitos Verdes - La Muralla Verde (Official Audio).mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2>La Muralla Verde-Enanitos verde</h2>
-                <p>Rock</p>
-                <audio
-                  controls
-                  id="audio8"
-                  src="./audio.mp3/Los Enanitos Verdes - La Muralla Verde (Official Audio).mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-
-            <!-- Playlist 2 -->
-            <div class="card-playlists">
+            <!--Cancion 2-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://i1.sndcdn.com/artworks-000090209835-yd4bkd-t500x500.jpg"
-                    alt="Fito Paez"
-                  />
+                <img
+                  src="https://i1.sndcdn.com/artworks-000090209835-yd4bkd-t500x500.jpg"
+                  class="card-img-top"
+                  alt="Fito Paez"
+                />
+                <div>
+                  <h5 class="card-title text-black">11 y 6 <br />Fito Paez</h5>
+                  <p>Rock</p>
+                  <audio
+                    controls
+                    id="audio8"
+                    src="./audio.mp3/Fito Páez - 11 Y 6 (Audio).mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2>11 y 6 <br />Fito Paez</h2>
-                <p>Rock</p>
-                <audio
-                  controls
-                  id="audio8"
-                  src="./audio.mp3/Fito Páez - 11 Y 6 (Audio).mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-
-            <!-- Playlist 3 -->
-            <div class="card-playlists">
+            <!--Cancion 3-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTznGX8P-eXBJWbdscr0O_of-Sqe2c_hdk-Jw&s"
-                    alt="Gustavo Cerati"
-                  />
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTznGX8P-eXBJWbdscr0O_of-Sqe2c_hdk-Jw&s"
+                  class="card-img-top"
+                  alt="Gustavo Cerati"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    Adios <br />
+                    Gustavo Cerati
+                  </h5>
+                  <p>Rock</p>
+                  <audio
+                    controls
+                    id="audio8"
+                    src="./audio.mp3/Gustavo Cerati Adiós (Official Video).mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2>
-                  Adios <br />
-                  Gustavo Cerati
-                </h2>
-                <p>Rock</p>
-                <audio
-                  controls
-                  id="audio8"
-                  src="./audio.mp3/Gustavo Cerati Adiós (Official Video).mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-
-            <!-- Playlist 4 -->
-            <div class="card-playlists">
+            <!--Cancion 4-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://www.cmtv.com.ar/tapas-cd/ntvgelcalordelpleno.webp"
-                    alt="NTVG"
-                  />
+                <img
+                  src="https://www.cmtv.com.ar/tapas-cd/ntvgelcalordelpleno.webp"
+                  class="card-img-top"
+                  alt="NTVG"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    NTVG <br />
+                    A las nueve
+                  </h5>
+                  <p>Rock</p>
+                  <audio
+                    controls
+                    id="audio8"
+                    src="./audio.mp3/No Te Va Gustar - A las nueve.mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2>
-                  NTVG <br />
-                  A las nueve
-                </h2>
-                <p>Rock</p>
-                <audio
-                  controls
-                  id="audio8"
-                  src="./audio.mp3/No Te Va Gustar - A las nueve.mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-          </div>
-        </div>
-        <!-- 3 Fila -->
-        <div class="container-name-playlists">
-          <h1 class="title-playlist text-light" id="cat2">
-            Categoria 2 Dance/Electronica
-          </h1>
-
-          <div class="container-card-playlists">
-            <!-- Playlist 1 -->
-            <div class="card-playlists">
+            <!--tercera fila
+            Cancion 1-->
+            <h1 class="my-5 text-light" id="cat2">Categoria 2 Dance/Electronica</h1>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://e.snmc.io/i/600/s/63403f4a97e4d8bb4060a01fe6a5e531/10716897/david-guetta-and-marten-horger-the-freaks-cover-art.jpg"
-                    alt="David Guetta"
-                  />
+                <img
+                  src="https://e.snmc.io/i/600/s/63403f4a97e4d8bb4060a01fe6a5e531/10716897/david-guetta-and-marten-horger-the-freaks-cover-art.jpg"
+                  class="card-img-top"
+                  alt="David Guetta"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    let's try it <br />
+                    David Guetta
+                  </h5>
+                  <p>Electronica</p>
+                  <audio
+                    controls
+                    id="audio8"
+                    src="./audio.mp3/MARTEN HØRGER X BRANDON - Let's Try It.mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2>
-                  let's try it <br />
-                  David Guetta
-                </h2>
-                <p>Electronica</p>
-                <audio
-                  controls
-                  id="audio8"
-                  src="./audio.mp3/MARTEN HØRGER X BRANDON - Let's Try It.mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-
-            <!-- Playlist 2 -->
-            <div class="card-playlists">
+            <!--Cancion 2-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://i.scdn.co/image/ab67616d00001e0237f06d61a0255e56106321d7"
-                    alt="im good blue"
-                  />
+                <img
+                  src="https://i.scdn.co/image/ab67616d00001e0237f06d61a0255e56106321d7"
+                  class="card-img-top"
+                  alt="im good blue"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    Im good blue <br />
+                    David Guetta
+                  </h5>
+                  <p>Electronica</p>
+                  <audio
+                    controls
+                    id="audio8"
+                    src="./audio.mp3/David Guetta & Bebe Rexha - I'm Good (Blue) [Official Music Video].mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2>
-                  Im good blue <br />
-                  David Guetta
-                </h2>
-                <p>Electronica</p>
-                <audio
-                  controls
-                  id="audio8"
-                  src="./audio.mp3/David Guetta & Bebe Rexha - I'm Good (Blue) [Official Music Video].mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-
-            <!-- Playlist 3 -->
-            <div class="card-playlists">
+            <!--Cancion 3-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiGtkU1YCMoIUWynPxZxlo9rZQmvazEfT3SA&s"
-                    alt="no eyes claptone"
-                  />
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiGtkU1YCMoIUWynPxZxlo9rZQmvazEfT3SA&s"
+                  class="card-img-top"
+                  alt="no eyes claptone"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    No eyes clapt <br />
+                    Radio Edit
+                  </h5>
+                  <p>Techno House</p>
+                  <audio
+                    controls
+                    id="audio8"
+                    src="./audio.mp3/No Eyes (Radio Edit).mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2>
-                  No eyes claptone <br />
-                  Radio Edit
-                </h2>
-                <p>Techno House</p>
-                <audio
-                  controls
-                  id="audio8"
-                  src="./audio.mp3/No Eyes (Radio Edit).mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-
-            <!-- Playlist 4 -->
-            <div class="card-playlists">
+            <!--Cancion 4-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT05XLo5XsIFtprbRAphZIrhSvkIGFr7e5GtA&s"
-                    alt="world hold on fisher"
-                  />
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT05XLo5XsIFtprbRAphZIrhSvkIGFr7e5GtA&s"
+                  class="card-img-top"
+                  alt="world hold on fisher"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    World hold <br />
+                    Fisher
+                  </h5>
+                  <p>Techno House</p>
+                  <audio
+                    controls
+                    id="audio8"
+                    src="./audio.mp3/Bob Sinclar Ft. Steve Edwards - World Hold On (Fisher Rework) (Official Video).mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2>
-                  World hold on fisher <br />
-                  Fisher
-                </h2>
-                <p>Techno House</p>
-                <audio
-                  controls
-                  id="audio8"
-                  src="./audio.mp3/Bob Sinclar Ft. Steve Edwards - World Hold On (Fisher Rework) (Official Video).mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-          </div>
-        </div>
-
-        <!-- 3 Fila -->
-        <div class="container-name-playlists">
-          <h1 class="title-playlist text-light" id="cat3">
-            Categoria 3 Reggaeton/Pop
-          </h1>
-
-          <div class="container-card-playlists">
-            <!-- Playlist 1 -->
-            <div class="card-playlists">
+            <!--cuarta fila
+            Cancion 1-->
+            <h1 class="my-5 text-light" id="cat3">Categoria 3 Reggaeton/Pop</h1>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://i1.sndcdn.com/artworks-UFQfWLROQepDk27G-uXBxjw-t500x500.jpg"
-                    alt="daddy yankee la despedida "
-                  />
+                <img
+                  src="https://i1.sndcdn.com/artworks-UFQfWLROQepDk27G-uXBxjw-t500x500.jpg"
+                  class="card-img-top"
+                  alt="daddy yankee la despedida"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    La despedida <br />
+                    Daddy Yankee
+                  </h5>
+                  <p>Reggaeton</p>
+                  <audio
+                    controls
+                    id="audio8"
+                    src="./audio.mp3/Daddy Yankee - La Despedida.mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2>
-                  La despedida <br />
-                  Daddy Yankee
-                </h2>
-                <p>Reggaeton</p>
-                <audio
-                  controls
-                  id="audio8"
-                  src="./audio.mp3/Daddy Yankee - La Despedida.mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-
-            <!-- Playlist 2 -->
-            <div class="card-playlists">
+            <!--Cancion 2-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUPsbhLFCwMCSnNsX4kJl_h03sGO-qrX3iCNH-Ychs9EqbEzCWQZDTij0cCFM0ipavJJk&usqp=CAU"
-                    alt="jeeiph"
-                  />
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUPsbhLFCwMCSnNsX4kJl_h03sGO-qrX3iCNH-Ychs9EqbEzCWQZDTij0cCFM0ipavJJk&usqp=CAU"
+                  class="card-img-top"
+                  alt="jeeiph"
+                />
+                <div>
+                  <h5 class="card-title text-black">Bonita <br />Jeeiph</h5>
+                  <p>Reggaeton/Pop</p>
+                  <audio
+                    controls
+                    id="audio8"
+                    src="./audio.mp3/Jeeiph - Bonita (Letra).mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2>Bonita <br />Jeeiph</h2>
-                <p>Reggaeton/Pop</p>
-                <audio
-                  controls
-                  id="audio8"
-                  src="./audio.mp3/Jeeiph - Bonita (Letra).mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-
-            <!-- Playlist 3 -->
-            <div class="card-playlists">
+            <!--Cancion 3-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Vic0FZbCr2NPM8Y581r53aHeMQe5tZN4rg&s"
-                    alt="Maria Becerra"
-                  />
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Vic0FZbCr2NPM8Y581r53aHeMQe5tZN4rg&s"
+                  class="card-img-top"
+                  alt="Maria Becerra"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    Iman<br />
+                    Maria Becerra
+                  </h5>
+                  <p>Reggaeton/Pop</p>
+                  <audio
+                    controls
+                    id="audio8"
+                    src="./audio.mp3/Maria Becerra - IMAN (Two Of Us) (Official Video).mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2>
-                  Iman<br />
-                  Maria Becerra
-                </h2>
-                <p>Reggaeton/Pop</p>
-                <audio
-                  controls
-                  id="audio8"
-                  src="./audio.mp3/Maria Becerra - IMAN (Two Of Us) (Official Video).mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-
-            <!-- Playlist 4 -->
-            <div class="card-playlists">
+            <!--Cancion 4-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwx53sS1f-auRyKQGEriubszrlKEI6BGKsyw&s"
-                    alt="emilia mernes uno los dos"
-                  />
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwx53sS1f-auRyKQGEriubszrlKEI6BGKsyw&s"
+                  class="card-img-top"
+                  alt="emilia mernes uno los dos"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    Uno los dos <br />
+                    Emilia Mernes
+                  </h5>
+                  <p>Reggaeton/Pop</p>
+                  <audio
+                    controls
+                    id="audio8"
+                    src="./audio.mp3/Miranda!, Emilia - Uno los Dos (Official Video).mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2>
-                  Uno los dos <br />
-                  Emilia Mernes
-                </h2>
-                <p>Reggaeton/Pop</p>
-                <audio
-                  controls
-                  id="audio8"
-                  src="./audio.mp3/Miranda!, Emilia - Uno los Dos (Official Video).mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-          </div>
-        </div>
-        <!-- 4 Fila -->
-        <div class="container-name-playlists">
-          <h1 class="title-playlist text-light" id="cat4">
-            Categoria 4 Cumbia/Pop
-          </h1>
-
-          <div class="container-card-playlists">
-            <!-- Playlist 1 -->
-            <div class="card-playlists">
+            <!--quinta fila
+            Cancion 1-->
+            <h1 class="my-5 text-light" id="cat4">Categoria 4 Cumbia/Pop</h1>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://i1.sndcdn.com/artworks-000502314876-4fgbgt-t500x500.jpg"
-                    alt="Rombai"
-                  />
+                <img
+                  src="https://i1.sndcdn.com/artworks-000502314876-4fgbgt-t500x500.jpg"
+                  class="card-img-top"
+                  alt="Rombai"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    Me voy <br />
+                    Rombai
+                  </h5>
+                  <p>Cumbia/Pop</p>
+                  <audio
+                    controls
+                    id="audio8"
+                    src="./audio.mp3/Rombai - Me Voy (Official Video).mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2>
-                  Me voy <br />
-                  Rombai
-                </h2>
-                <p>Cumbia/Pop</p>
-                <audio
-                  controls
-                  id="audio8"
-                  src="./audio.mp3/Rombai - Me Voy (Official Video).mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-
-            <!-- Playlist 2 -->
-            <div class="card-playlists">
+            <!--Cancion 2-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8YaPRMtOKzYTvUlrluhRrnoFQusYlu5INUA&s"
-                    alt="marama"
-                  />
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8YaPRMtOKzYTvUlrluhRrnoFQusYlu5INUA&s"
+                  class="card-img-top"
+                  alt="marama"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    Te Amo y Odio <br />Marama
+                  </h5>
+                  <p>Cumbia/Pop</p>
+                  <audio
+                    controls
+                    id="audio8"
+                    src="./audio.mp3/Marama - Te Amo Y Odio (Letra).mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2>Te Amo y Odio <br />Marama</h2>
-                <p>Cumbia/Pop</p>
-                <audio
-                  controls
-                  id="audio8"
-                  src="./audio.mp3/Marama - Te Amo Y Odio (Letra).mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-
-            <!-- Playlist 3 -->
-            <div class="card-playlists">
+            <!--Cancion 3-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://cdns-images.dzcdn.net/images/cover/d6b7971c2f77bc7a6b64b3c48c89d697/1900x1900-000000-80-0-0.jpg"
-                    alt="Hoy"
-                  />
+                <img
+                  src="https://cdns-images.dzcdn.net/images/cover/d6b7971c2f77bc7a6b64b3c48c89d697/1900x1900-000000-80-0-0.jpg"
+                  class="card-img-top"
+                  alt="Hoy"
+                />
+                <div>
+                  <h5 class="card-title text-black">Hoy <br />The la Planta</h5>
+                  <p>Cumbia</p>
+                  <audio controls id="audio8" src="./audio.mp3/HOY.mp3"></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2>
-                  Hoy<br />
-                  The la Planta
-                </h2>
-                <p>Cumbia</p>
-                <audio controls id="audio8" src="./audio.mp3/HOY.mp3"></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
-
-            <!-- Playlist 4 -->
-            <div class="card-playlists">
-              <div class="card">
-                <div class="card-img">
-                  <img
-                    src="https://i0.wp.com/pablolayus.ar/wp-content/uploads/2024/02/Rafaga-y-una-version-inedita-de-Todo-comenzo-bailando-junto-a-Emanero-y-Marama.jpg?fit=1080%2C1080&ssl=1"
-                    alt="marama"
-                  />
+            <!--Cancion 4-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card w-100">
+                <img
+                  src="https://i0.wp.com/pablolayus.ar/wp-content/uploads/2024/02/Rafaga-y-una-version-inedita-de-Todo-comenzo-bailando-junto-a-Emanero-y-Marama.jpg?fit=1080%2C1080&ssl=1"
+                  class="card-img-top"
+                  alt="marama"
+                />
+                <div>
+                  <h5 class="card-title text-black">
+                    Todo Comenzó Bailando <br> Rafaga
+                  </h5>
+                  <p>cumbia</p>
+                  <audio
+                    controls
+                    id="audio8"
+                    src="./audio.mp3/Marama Emanero y Ráfaga (todo comenzo bailando remix LETRA).mp3"
+                  ></audio>
+                  <button class="btn-escuchar-mas">Escuchar más</button>
                 </div>
-                <h2>Rafaga-Todo Comenzó Bailando</h2>
-                <p>cumbia</p>
-                <audio
-                  controls
-                  id="audio8"
-                  src="./audio.mp3/Marama Emanero y Ráfaga (todo comenzo bailando remix LETRA).mp3"
-                ></audio>
-                <button class="btn-escuchar-mas">Escuchar más</button>
               </div>
             </div>
           </div>
