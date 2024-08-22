@@ -11,8 +11,33 @@
 </head>
 <body>
     <header>
-        <nav>
-
+        <nav class="navbar navbar-expand-lg  d-flex justify-content-between position-fixed">
+            <div class="container">
+                <a class="navbar-brand " href="./../index.html">
+                    <img src="./../img/logoPrincipal.jpg" alt="Logo" width="200" height="70" class="align-text-top">
+                </a>
+                <button class="navbar-toggler customToggle" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navBar" aria-controls="navBar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navBar">
+                    <ul class="flex-column flex-lg-row justify-content-lg-evenly w-100">
+                        <li class="nav-item">
+                            <a class="color-a" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="color-a" href="./administrador.html">Administracion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="color-a active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="color-a" href="./login.html">Iniciar Sesion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
