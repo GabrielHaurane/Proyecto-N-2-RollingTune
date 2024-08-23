@@ -193,3 +193,57 @@ audio {
   padding: 15px;
   border-radius: 50%;
 }
+    .sectionDetalles {
+    /* margin-top: 80px;  */
+    color: black;
+    background-color: #65212141;
+    }
+
+
+    .error-section {
+        text-align: center;
+        padding: 50px 15px;
+        min-height: calc(100vh - 80px); /* Ajuste para ocupar la pantalla completa menos la altura de la navbar */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .error-message {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 20px 0;
+        color: #fff;
+        text-shadow:-1px 6px 9px black
+    }
+
+    #play-button-1, #play-button-2, #play-button-3, #play-button-4, #play-button-5 {
+        cursor: pointer;
+      }
+
+      .header-section {
+        background: url('ruta_a_tu_imagen_header.jpg') no-repeat center center;
+        background-size: cover;
+        height: 50vh;
+        color: white;
+        text-align: center;
+    }
+    
+    .header-section h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .header-section .btn {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .miembro{
+        color: white;
+    }
