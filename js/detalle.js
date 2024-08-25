@@ -1,5 +1,8 @@
 import { funcionScroll } from "./navbar.js";
 funcionScroll;
+import { loguear, validateEmailFormat } from "./login.js";
+loguear;
+validateEmailFormat;
 const paramId = new URLSearchParams(window.location.search).get('id');  
 const listaCanciones = JSON.parse(localStorage.getItem('agendaKey')) || [];
 const cancionBuscada = listaCanciones.find((cancion)=>cancion.id === paramId);

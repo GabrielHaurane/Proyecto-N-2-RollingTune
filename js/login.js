@@ -1,5 +1,5 @@
 
-function loguear() {
+export function loguear() {
     const validEmail = "bere@gmail.com";
     const validPassword = "12345678";
 
@@ -19,7 +19,7 @@ function loguear() {
     }
 }
 
-function validateEmailFormat(email) {
+export function validateEmailFormat(email) {
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailPattern.test(email);
 }

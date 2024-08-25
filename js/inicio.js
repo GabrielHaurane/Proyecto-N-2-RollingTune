@@ -1,5 +1,8 @@
 import { funcionScroll } from "./navbar.js";
 funcionScroll;
+import { loguear, validateEmailFormat } from "./login.js";
+loguear;
+validateEmailFormat;
 const usuarioLogueado = false;
 
 document.querySelectorAll("audio").forEach(function (audioElement) {
