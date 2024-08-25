@@ -1,25 +1,41 @@
-
 function loguear() {
-    const validEmail = "bere@gmail.com";
-    const validPassword = "12345678";
+    const adminEmail = "admin@gmail.com";
+    const adminPassword = "admin123";
+    const clienteEmail = "cliente@gmail.com";
+    const clientePassword = "cliente123";
 
     const userEmail = document.getElementById("InputEmail").value.trim();
     const userPassword = document.getElementById("InputPassword1").value.trim();
-
+    
     if (!validateEmailFormat(userEmail)) {
-        alert("Formato de correo electrónico incorrecto");
-        return;
+        Swal.fire({
+            title: 'Error',
+            text: 'Formato de correo electrónico incorrecto',
+            icon: 'warning',
+            confirmButtonText: 'Entendido'
+        });
+        return false;
     }
 
-    if (userEmail === validEmail && userPassword === validPassword) {
-        alert("Bienvenido");
-        // Redirigir al usuario o realizar otra acción aquí
+    if (userEmail === adminEmail && userPassword === adminPassword) {
+        localStorage.setItem("userRole", "admin");
+        window.location.href = "./pages/administrador.html";
+    } else if (userEmail === clienteEmail && userPassword === clientePassword) {
+        window.location.href = "./index.html";
     } else {
-        alert("Correo electrónico o contraseña incorrectos");
+        Swal.fire({
+            title: 'Error',
+            text: 'Correo electrónico o contraseña incorrectos',
+            icon: 'error',
+            confirmButtonText: 'Intentar de nuevo'
+        });
+        return false;
     }
+    
+    return false; 
 }
 
 function validateEmailFormat(email) {
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    return emailPattern.test(email);
+    return emailPattern.test(email); 
 }

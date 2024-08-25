@@ -459,14 +459,12 @@
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="LogInModalLabel">
-                      Iniciar sesión
-                    </h1>
+                    <h1 class="modal-title fs-5" id="LogInModalLabel">Iniciar sesión</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body row mb-2">
                     <div class="col-12">
-                      <form action="./pages/error404.html">
+                      <form onsubmit="return loguear()">
                         <div class="text-center">
                           <h3>¡Bienvenido!</h3>
                           <p class="text-secondary">Accede a tu música</p>
@@ -499,17 +497,15 @@
                             </div>
                             <div class="mb-3">
                               <label for="InputEmail" class="form-label">Email *</label>
-                              <input pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="ejemplo@gmail.com"
-                                maxlength="255" required type="email" class="form-control" id="InputEmail"
-                                aria-describedby="emailHelp" />
+            <input pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="ejemplo@gmail.com" maxlength="255" required type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" />
+
                             </div>
                             <div class="mb-3">
                               <label for="InputPassword1" class="form-label">Contraseña *</label>
-                              <input required placeholder="Contraseña" minlength="8" maxlength="64" type="password"
-                                class="form-control" id="InputPassword1" />
+            <input required placeholder="Contraseña" minlength="8" maxlength="64" type="password" class="form-control" id="InputPassword1" />
                             </div>
                             <div class="d-flex justify-content-around">
-                              <button type="submit" class="btn btn-dark" onclick="loguear()">Iniciar Sesión</button>
+                              <button type="button" class="btn btn-dark" onclick="loguear()">Iniciar Sesión</button>
                               <a href="./pages/error404.html" class="align-self-center" type="button">Olvidé mi contraseña</a>
                             </div>
                           </div>
@@ -523,6 +519,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="./js/inicio.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="./js/login.js"></script>
 </body>
 

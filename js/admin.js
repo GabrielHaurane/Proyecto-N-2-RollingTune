@@ -177,3 +177,19 @@ cargaInicial()
 
 btnAgregarCancion.addEventListener('click',mostrarModal)
 formCanciones.addEventListener('submit',agregarNuevaCancion)
+
+
+//Autorizar al admin
+
+function checkAdminAccess() {
+    
+    const userRole = localStorage.getItem("userRole");
+
+    if (userRole !== "admin") {
+    
+        window.location.href = "../index.html"; 
+    }
+}
+
+
+window.onload = checkAdminAccess;
