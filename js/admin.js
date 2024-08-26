@@ -2,6 +2,7 @@ import { funcionScroll } from "./navbar.js";
 funcionScroll;
 import { cancion } from "./claseCancion.js";
 
+
 const modalAdminCancion = new bootstrap.Modal(
     document.querySelector("#modalCancion")
   );
@@ -22,7 +23,6 @@ const artista = document.querySelector("#artista")
 const album = document.querySelector("#album")
 const fecha = document.querySelector("#fecha")
 const categoria = document.querySelector("#categoria")
-const duracion = document.querySelector("#duracion")
 const audio = document.querySelector("#audio")
 const imagen = document.querySelector("#imagen")
 const Enombre = document.querySelector("#nombreEditarCancion")

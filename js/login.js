@@ -115,9 +115,4 @@ function cerrarSesion() {
   });
 }
 });
-window.onload = function() {
-  const usuario = localStorage.getItem('usuario');
-  if (usuario) {
-      iniciarSesion(usuario);
-  }
-}
+

@@ -23,7 +23,7 @@
     <header>
         <nav class="navbar navbar-expand-lg  d-flex justify-content-between position-fixed">
             <div class="container">
-                <a class="navbar-brand " href="./index.html">
+                <a class="navbar-brand " href="./../index.html">
                     <img src="./../img/logoPrincipal.jpg" alt="Logo" width="200" height="70" class="align-text-top">
                 </a>
                 <button class="navbar-toggler customToggle" type="button" data-bs-toggle="collapse"
@@ -31,19 +31,20 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-between" >
-                    <ul class="flex-column flex-lg-row justify-content-lg-evenly w-100" id="contenedorNavBar">
+                <div class="collapse navbar-collapse justify-content-between" id="navBar">
+                    <ul class="flex-column flex-lg-row justify-content-lg-evenly w-100">
                         <li class="nav-item">
-                            <a class="color-a active" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="color-a" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="color-a active" aria-current="page" href="./administrador.html">Administracion</a>
                         </li>
                         <li class="nav-item">
                             <a class="color-a" href="./nosotros.html">Nosotros</a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="color-a" href="#iniciar-sesion" id="loginLink">inicio sesion</a>
-                        </li> -->
-                        
-                        
+                        <li class="nav-item">
+                            <a class="color-a" href="#iniciar-sesion" id="loginLink">Iniciar Sesión</a>
+                          </li>
                     </ul>
                 </div>
             </div>
@@ -69,108 +70,7 @@
             <tbody>
             </tbody>
         </table>
-        <div class="modal" id="modalCancion"  aria-labelledby="modalCancion" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title w-100 text-center fs-5">Registrar Cancion</h2>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="nombrecancion" class="form-label">Nombre Cancion</label>
-                                <input class="form-control" id="nombrecancion" type="text">
-                                <div class="valid-feedback">Es valido</div>
-                                <div class="invalid-feedback">no es valido</div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="artista" class="form-label">Artista</label>
-                                <input class="form-control" id="artista" type="text">
-                            </div>
-                            <div class="mb-3">
-                                <label for="album" class="form-label">Album</label>
-                                <input class="form-control" id="album" type="text">
-                            </div>
-                            <div class="mb-3">
-                                <label for="fecha" class="form-label">Fecha</label>
-                                <input class="form-control" id="fecha" type="fecha">
-                            </div>
-                            <div class="mb-3">
-                                <label for="categoria" class="form-label">Categoria</label>
-                                <input class="form-control" id="categoria" type="tel">
-                            </div>
-                            <div class="mb-3">
-                                <label for="duracion" class="form-label">Duracion</label>
-                                <input class="form-control" id="duracion" type="text">
-                            </div>
-                            <div class="mb-3">
-                                <label for="audio" class="form-label">Audio</label>
-                                <input class="form-control" id="audio" type="audio">
-                            </div>
-                            <div class="mb-3">
-                                <label for="imagen" class="form-label">Imagen</label>
-                                <input class="form-control" id="imagen" type="text">
-                            </div>
-                            <button class="btn btn-primary" type="submit" id="btnguardar">Guardar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal " id="modalEditarCancion"  aria-labelledby="modalEditarCancion"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title w-100 text-center fs-5">Registrar Cancion</h2>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-
-                    <div class="modal-body">
-                        <form id="formEditar">
-
-                            <div class="mb-3">
-                                <label for="nombreEditarCancion" class="form-label">Nombre Cancion</label>
-                                <input class="form-control" id="nombreEditarCancion" type="text">
-                                <div class="valid-feedback">Es valido</div>
-                                <div class="invalid-feedback">no es valido</div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="editarArtista" class="form-label">Atista</label>
-                                <input class="form-control" id="editarArtista" type="text">
-                            </div>
-                            <div class="mb-3">
-                                <label for="editarAlbum" class="form-label">Album</label>
-                                <input class="form-control" id="editarAlbum" type="text">
-                            </div>
-                            <div class="mb-3">
-                                <label for="editarFecha" class="form-label">Fecha</label>
-                                <input class="form-control" id="editarFecha" type="fecha">
-                            </div>
-                            <div class="mb-3">
-                                <label for="editarCategoria" class="form-label">Categoria</label>
-                                <input class="form-control" id="editarCategoria" type="tel">
-                            </div>
-                            <div class="mb-3">
-                                <label for="editarDuracion" class="form-label">Duracion</label>
-                                <input class="form-control" id="editarDuracion" type="text">
-                            </div>
-                            <div class="mb-3">
-                                <label for="editarAudio" class="form-label">Audio</label>
-                                <input class="form-control"  id="fileaudio" type="file">
-                            </div>
-                            <div class="mb-3">
-                                <label for="editarImagen" class="form-label">Imagen</label>
-                                <input class="form-control" id="editarImagen" type="text">
-                            </div>
-                            <button class="btn btn-primary" type="submit" id="btnguardar">Guardar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </main>
     <footer class="w-100 d-flex flex-column flex-lg-row">
         <section class="d-flex flex-wrap justify-content-sm-center justify-content-lg-around w-100">
@@ -214,8 +114,107 @@
             </div>
         </section>
     </footer>
-     <!-- Comienzo de la ventana modal -->
-     <!-- <div id="loginModal" class="modal">
+    <div class="modal" id="modalCancion" tabindex="-1" aria-labelledby="modalCancion" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title w-100 text-center fs-5">Registrar Cancion</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombrecancion" class="form-label">Nombre Cancion</label>
+                            <input class="form-control" id="nombrecancion" type="text">
+                            <div class="valid-feedback">Es valido</div>
+                            <div class="invalid-feedback">no es valido</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="artista" class="form-label">Artista</label>
+                            <input class="form-control" id="artista" type="text">
+                        </div>
+                        <div class="mb-3">
+                            <label for="album" class="form-label">Album</label>
+                            <input class="form-control" id="album" type="text">
+                        </div>
+                        <div class="mb-3">
+                            <label for="fecha" class="form-label">Fecha</label>
+                            <input class="form-control" id="fecha" type="fecha">
+                        </div>
+                        <div class="mb-3">
+                            <label for="categoria" class="form-label">Categoria</label>
+                            <input class="form-control" id="categoria" type="tel">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="audio" class="form-label">Audio</label>
+                            <input class="form-control" id="audio" type="text">
+                        </div>
+                        <div class="mb-3">
+                            <label for="imagen" class="form-label">Imagen</label>
+                            <input class="form-control" id="imagen" type="text">
+                        </div>
+                        <button class="btn btn-primary" type="submit" id="btnguardar">Guardar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modalEditarCancion" tabindex="-1" aria-labelledby="modalEditarCancion"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title w-100 text-center fs-5">Registrar Cancion</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form id="formEditar">
+
+                        <div class="mb-3">
+                            <label for="nombreEditarCancion" class="form-label">Nombre Cancion</label>
+                            <input class="form-control" id="nombreEditarCancion" type="text">
+                            <div class="valid-feedback">Es valido</div>
+                            <div class="invalid-feedback">no es valido</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editarArtista" class="form-label">Atista</label>
+                            <input class="form-control" id="editarArtista" type="text">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editarAlbum" class="form-label">Album</label>
+                            <input class="form-control" id="editarAlbum" type="text">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editarFecha" class="form-label">Fecha</label>
+                            <input class="form-control" id="editarFecha" type="fecha">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editarCategoria" class="form-label">Categoria</label>
+                            <input class="form-control" id="editarCategoria" type="tel">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editarDuracion" class="form-label">Duracion</label>
+                            <input class="form-control" id="editarDuracion" type="text">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editarAudio" class="form-label">Audio</label>
+                            <input class="form-control" id="editarAudio" type="audio">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editarImagen" class="form-label">Imagen</label>
+                            <input class="form-control" id="editarImagen" type="text">
+                        </div>
+                        <button class="btn btn-primary" type="submit" id="btnguardarEdit">Guardar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Comienzo de la ventana modal login -->
+    <div id="loginModal" class="modal">
         <div class="modal-content bg-black">
           <i class="bi bi-x-lg text-white" id="cerrar" ></i>
           <img src="./../img/logoPrincipal.jpg" alt="Logo" width="200" height="70" class="img-fluid d-flex align-self-center">
@@ -231,13 +230,13 @@
               <p id="error-message" class="error-message fs-5" ></p>
             </form>
         </div>
-    </div> -->
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/admin.js" type="module"></script>
-    <!-- <script src="./../js/loginPages.js" type="module"></script> -->
+    <script src="../js/login.js" type="module"></script>
 </body>
 
 </html>
