@@ -105,7 +105,4 @@ function cerrarSesion() {
   });
 }
 
-function showError(message) {
-  errorMessage.textContent = message;
-  errorMessage.style.display = "block";
-}
+
