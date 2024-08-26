@@ -1,6 +1,7 @@
 import { funcionScroll } from "./navbar.js";
 funcionScroll;
 import { cancion } from "./claseCancion.js";
+// import { formuCanciones } from "./validaciones.js";
 const modalAdminCancion = new bootstrap.Modal(
     document.querySelector("#modalCancion")
   );
@@ -36,6 +37,7 @@ const Eimagen = document.querySelector("#editarImagen")
 
 
 
+
 //FUNCIONES
 const mostrarModal = ()=>{
     modalAdminCancion.show()
@@ -60,7 +62,7 @@ const agregarNuevaCancion = (e)=>{
         album.value,
         fecha.value,
         categoria.value,
-        duracion.value,
+        undefined,
         audio.value,
         imagen.value
     )
@@ -132,7 +134,7 @@ window.editarCancion = (id)=>{
         listaCanciones[buscarIndiceCancion].categoria=Ecategoria.value
         listaCanciones[buscarIndiceCancion].duracion=Eduracion.value
         listaCanciones[buscarIndiceCancion].audio=Eaudio.value
-        listaCanciones[buscarIndiceCancion].imagen=Eimagen.value
+        listaCanciones[buscarIndiceCancion].imgcancion=Eimagen.value
         guardarEnLocalStorage()
         location.reload()
     })
@@ -177,3 +179,4 @@ cargaInicial()
 
 btnAgregarCancion.addEventListener('click',mostrarModal)
 formCanciones.addEventListener('submit',agregarNuevaCancion)
+// formuCanciones;

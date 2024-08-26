@@ -1,67 +1,115 @@
-document
-  .getElementById("formCancion")
-  .addEventListener("submit", function (event) {
-    // Previene el envío del formulario si hay errores
-    event.preventDefault();
+const validarNombreCancion = (nombre) => {
+  const minLength = 2;
+  const maxLength = 50;
+  if (nombre.length < minLength || nombre.length > maxLength) {
+    return `El nombre de la canción debe tener entre ${minLength} y ${maxLength} caracteres.`;
+  }
+  return '';
+};
 
-    let isValid = true;
+// Validación del nombre del artista
+const validarArtista = (artista) => {
+  const minLength = 2;
+  const maxLength = 50;
+  if (artista.length < minLength || artista.length > maxLength) {
+    return `El nombre del artista debe tener entre ${minLength} y ${maxLength} caracteres.`;
+  }
+  return '';
+};
 
-    //Aqui se obtiene los elemnts del form
-    const nombreCancion = document.getElementById("nombrecancion");
-    const artista = document.getElementById("artista");
-    const fecha = document.getElementById("fecha");
-    const duracion = document.getElementById("duracion");
-    const audio = document.getElementById("audio");
+// Validación del nombre del álbum
+const validarAlbum = (album) => {
+  const minLength = 2;
+  const maxLength = 50;
+  if (album.length < minLength || album.length > maxLength) {
+    return `El nombre del álbum debe tener entre ${minLength} y ${maxLength} caracteres.`;
+  }
+  return '';
+};
 
-    //validacion primer campo
-    if (nombreCancion.value.trim().length < 3 || nombreCancion.value.trim().length > 100) {
-        isValid = false;
-        nombreCancion.classList.add('is-invalid');
-    } else {
-        nombreCancion.classList.remove('is-invalid');
-        nombreCancion.classList.add('is-valid');
-    }
+// Validación del archivo de audio
+const validarAudio = (audio) => {
+  if (!audio) {
+    return 'Debe seleccionar un archivo de audio.';
+  }
+  
+  const validExtensions = ['audio/mpeg', 'audio/mp3', 'audio/wav', 'audio/ogg'];
+  if (!validExtensions.includes(audio.type)) {
+    return 'El archivo de audio debe ser de tipo MP3, WAV, OGG o MPEG.';
+  }
+  
+  const maxSizeInMB = 10;
+  if (audio.size > maxSizeInMB * 1024 * 1024) {
+    return `El archivo de audio no debe exceder los ${maxSizeInMB} MB.`;
+  }
+  
+  return '';
+};
 
-    // Validacion seg campo"
-    if (artista.value.trim().length < 3 || artista.value.trim().length > 100) {
-        isValid = false;
-        artista.classList.add('is-invalid');
-    } else {
-        artista.classList.remove('is-invalid');
-        artista.classList.add('is-valid');
-    }
+// Validación del archivo de imagen
+const validarImagen = (imagen) => {
+  if (!imagen) {
+    return 'Debe seleccionar un archivo de imagen.';
+  }
+  
+  const validExtensions = ['image/jpeg', 'image/png', 'image/gif'];
+  if (!validExtensions.includes(imagen.type)) {
+    return 'El archivo de imagen debe ser de tipo JPEG, PNG o GIF.';
+  }
+  
+  const maxSizeInMB = 5;
+  if (imagen.size > maxSizeInMB * 1024 * 1024) {
+    return `El archivo de imagen no debe exceder los ${maxSizeInMB} MB.`;
+  }
+  
+  return '';
+};
 
-    // Validacion tercer campo
-    if (fecha.value.trim() === "") {
-      isValid = false;
-      fecha.classList.add("is-invalid");
-    } else {
-      fecha.classList.remove("is-invalid");
-      fecha.classList.add("is-valid");
-    }
+// Función principal para validar el formulario completo
+const validarFormularioCancion = (cancion) => {
+  const errores = {};
 
-    // Validacion cuarto campo
-    if (duracion.value.trim() === "" || duracion.value <= 0) {
-      isValid = false;
-      duracion.classList.add("is-invalid");
-    } else {
-      duracion.classList.remove("is-invalid");
-      duracion.classList.add("is-valid");
-    }
+  // Validaciones individuales
+  const errorNombreCancion = validarNombreCancion(cancion.nombre);
+  if (errorNombreCancion) errores.nombre = errorNombreCancion;
+  
+  const errorArtista = validarArtista(cancion.artista);
+  if (errorArtista) errores.artista = errorArtista;
 
-    // Validacion quinto campo
-    if (audio.files.length === 0) {
-      isValid = false;
-      audio.classList.add("is-invalid");
-    } else {
-      audio.classList.remove("is-invalid");
-      audio.classList.add("is-valid");
-    }
+  const errorAlbum = validarAlbum(cancion.album);
+  if (errorAlbum) errores.album = errorAlbum;
 
-    // Si las validacions son correctas, envia los campos
-    if (isValid) {
-      this.submit();
-    } else {
-      alert("Por favor, corrige los errores en el formulario antes de envir.");
-    }
-  });
+  const errorAudio = validarAudio(cancion.audio);
+  if (errorAudio) errores.audio = errorAudio;
+
+  const errorImagen = validarImagen(cancion.imagen);
+  if (errorImagen) errores.imagen = errorImagen;
+
+  return errores;
+};
+
+// Ejemplo de uso
+// export const formuCanciones = document.getElementById('formularioCancion').addEventListener('submit', function(event) {
+//   event.preventDefault(); // Evita el envío del formulario
+  
+//   const nombre = document.getElementById('nombreCancion').value.trim();
+//   const artista = document.getElementById('artista').value.trim();
+//   const album = document.getElementById('album').value.trim();
+//   const audio = document.getElementById('audio').files[0];
+//   const imagen = document.getElementById('imagen').files[0];
+
+//   const cancion = { nombre, artista, album, audio, imagen };
+//   const errores = validarFormularioCancion(cancion);
+  
+//   if (Object.keys(errores).length === 0) {
+//     alert('Canción validada correctamente');
+//     // Aquí puedes proceder a enviar el formulario o guardar los datos
+//   } else {
+//     // Manejar los errores mostrando los mensajes correspondientes en la interfaz
+//     if (errores.nombre) document.getElementById('nombreError').textContent = errores.nombre;
+//     if (errores.artista) document.getElementById('artistaError').textContent = errores.artista;
+//     if (errores.album) document.getElementById('albumError').textContent = errores.album;
+//     if (errores.audio) document.getElementById('audioError').textContent = errores.audio;
+//     if (errores.imagen) document.getElementById('imagenError').textContent = errores.imagen;
+//   }
+// });
