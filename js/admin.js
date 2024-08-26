@@ -86,11 +86,11 @@ window.borrarCancion = (id)=>{
         cancelButtonText: "Cancelar"
       }).then((result) => {
           if (result.isConfirmed) {
-              console.log(id)
+              
               
               const posicionCancion = listaCanciones.findIndex((cancion) => cancion.id === id)
 
-            console.log(posicionCancion)
+            
 
             listaCanciones.splice(posicionCancion,1)
             
@@ -124,7 +124,7 @@ window.editarCancion = (id)=>{
     Eimagen.value = `${listaCanciones[buscarIndiceCancion].imgcancion}`
     formEditarCanciones.addEventListener('submit', function (e){
         e.preventDefault()
-        console.log(listaCanciones[buscarIndiceCancion].id)
+        
         listaCanciones[buscarIndiceCancion].nombre=Enombre.value
         listaCanciones[buscarIndiceCancion].artista=Eartista.value
         listaCanciones[buscarIndiceCancion].album=Ealbum.value

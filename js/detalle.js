@@ -14,7 +14,7 @@ const cancionBuscada = listaCanciones.find((cancion)=>cancion.id === paramId);
 
 const dibujarCancion = ()=>{
     const contenedor = document.querySelector(".contenedorCancion")
-    console.log(contenedor);
+    
     contenedor.innerHTML = `<div class="container w-75 sectionDetalles mt-5 card mb-3">
             <div class=" row g-0">
                 <div class="w-25 justify-content-center d-flex flex-column col-md-4">
