@@ -14,21 +14,21 @@ document
     const audio = document.getElementById("audio");
 
     //validacion primer campo
-    if (nombreCancion.value.trim() === "") {
-      isValid = false;
-      nombreCancion.classList.add("is-invalid");
+    if (nombreCancion.value.trim().length < 3 || nombreCancion.value.trim().length > 100) {
+        isValid = false;
+        nombreCancion.classList.add('is-invalid');
     } else {
-      nombreCancion.classList.remove("is-invalid");
-      nombreCancion.classList.add("is-valid");
+        nombreCancion.classList.remove('is-invalid');
+        nombreCancion.classList.add('is-valid');
     }
 
     // Validacion seg campo"
-    if (artista.value.trim() === "") {
-      isValid = false;
-      artista.classList.add("is-invalid");
+    if (artista.value.trim().length < 3 || artista.value.trim().length > 100) {
+        isValid = false;
+        artista.classList.add('is-invalid');
     } else {
-      artista.classList.remove("is-invalid");
-      artista.classList.add("is-valid");
+        artista.classList.remove('is-invalid');
+        artista.classList.add('is-valid');
     }
 
     // Validacion tercer campo
