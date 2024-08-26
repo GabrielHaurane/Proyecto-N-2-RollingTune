@@ -22,7 +22,7 @@ const album = document.querySelector("#album")
 const fecha = document.querySelector("#fecha")
 const categoria = document.querySelector("#categoria")
 const duracion = document.querySelector("#duracion")
-const audio = document.querySelector("#audio")
+const fileaudio = document.querySelector("#audio")
 const imagen = document.querySelector("#imagen")
 const Enombre = document.querySelector("#nombreEditarCancion")
 const Eartista = document.querySelector("#editarArtista")
@@ -61,7 +61,7 @@ const agregarNuevaCancion = (e)=>{
         fecha.value,
         categoria.value,
         duracion.value,
-        audio.value,
+        fileaudio.value,
         imagen.value
     )
     listaCanciones.push(nuevaCancion)
@@ -177,3 +177,19 @@ cargaInicial()
 
 btnAgregarCancion.addEventListener('click',mostrarModal)
 formCanciones.addEventListener('submit',agregarNuevaCancion)
+
+
+//Autorizar al admin
+
+function checkAdminAccess() {
+    
+    const userRole = localStorage.getItem("userRole");
+
+    if (userRole !== "admin") {
+    
+        window.location.href = "../index.html"; 
+    }
+}
+
+
+window.onload = checkAdminAccess;

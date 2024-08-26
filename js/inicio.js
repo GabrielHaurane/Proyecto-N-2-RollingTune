@@ -1,8 +1,6 @@
 import { funcionScroll } from "./navbar.js";
 funcionScroll;
-import { loguear, validateEmailFormat } from "./login.js";
-loguear;
-validateEmailFormat;
+
 const usuarioLogueado = false;
 
 document.querySelectorAll("audio").forEach(function (audioElement) {
@@ -72,7 +70,3 @@ function scrollFunction() {
   }
 }
 
-// Función para desplazarse hacia arriba al hacer clic en el botón
-document.getElementById("backToTopBtn").addEventListener("click", function () {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
