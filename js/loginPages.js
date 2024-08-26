@@ -1,12 +1,12 @@
-// localStorage.setItem('usuario', JSON.stringify(usuario));
+ localStorage.setItem('usuario', JSON.stringify(usuario));
 
-// window.onload = function() {
-//     const usuarioString = localStorage.getItem('usuario'); // Obtienes el string del usuario
-//     if (usuarioString) {
-//         const usuario = JSON.parse(usuarioString); // Lo parseas a objeto
-//         iniciarSesion(usuario); // Luego lo pasas a la función
-//     }
-// }
+ window.onload = function() {
+     const usuarioString = localStorage.getItem('usuario'); // Obtienes el string del usuario
+     if (usuarioString) {
+         const usuario = JSON.parse(usuarioString); // Lo parseas a objeto
+         iniciarSesion(usuario); // Luego lo pasas a la función
+     }
+ }
 document.addEventListener("DOMContentLoaded", () => {
     const loginLink = document.querySelector("#loginLink");
     const loginModal = document.querySelector("#loginModal");
