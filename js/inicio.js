@@ -1,7 +1,7 @@
-import { funcionScroll } from "./navbar.js";
-import { cancion } from "./claseCancion.js";
+
+
 const listaCanciones = JSON.parse(localStorage.getItem("cancionKey")) || [];
-funcionScroll;
+
 const usuarioLogueado = false;
 const card = document.querySelector("#cardInicio")
 const btnMass = document.querySelectorAll(".btn-escuchar-mas")
