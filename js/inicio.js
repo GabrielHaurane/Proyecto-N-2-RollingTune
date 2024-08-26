@@ -1,4 +1,5 @@
-
+import { funcionScroll } from "./navbar.js";
+funcionScroll;
 
 const listaCanciones = JSON.parse(localStorage.getItem("cancionKey")) || [];
 
