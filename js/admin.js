@@ -1,6 +1,7 @@
 import { funcionScroll } from "./navbar.js";
 funcionScroll;
 import { cancion } from "./claseCancion.js";
+
 const modalAdminCancion = new bootstrap.Modal(
     document.querySelector("#modalCancion")
   );
@@ -22,7 +23,7 @@ const album = document.querySelector("#album")
 const fecha = document.querySelector("#fecha")
 const categoria = document.querySelector("#categoria")
 const duracion = document.querySelector("#duracion")
-const fileaudio = document.querySelector("#audio")
+const audio = document.querySelector("#audio")
 const imagen = document.querySelector("#imagen")
 const Enombre = document.querySelector("#nombreEditarCancion")
 const Eartista = document.querySelector("#editarArtista")
@@ -32,6 +33,7 @@ const Ecategoria = document.querySelector("#editarCategoria")
 const Eduracion = document.querySelector("#editarDuracion")
 const Eaudio = document.querySelector("#editarAudio")
 const Eimagen = document.querySelector("#editarImagen")
+
 
 
 
@@ -60,8 +62,8 @@ const agregarNuevaCancion = (e)=>{
         album.value,
         fecha.value,
         categoria.value,
-        duracion.value,
-        fileaudio.value,
+        undefined,
+        audio.value,
         imagen.value
     )
     listaCanciones.push(nuevaCancion)
@@ -86,11 +88,11 @@ window.borrarCancion = (id)=>{
         cancelButtonText: "Cancelar"
       }).then((result) => {
           if (result.isConfirmed) {
-              
+              console.log(id)
               
               const posicionCancion = listaCanciones.findIndex((cancion) => cancion.id === id)
 
-            
+            console.log(posicionCancion)
 
             listaCanciones.splice(posicionCancion,1)
             
@@ -124,7 +126,7 @@ window.editarCancion = (id)=>{
     Eimagen.value = `${listaCanciones[buscarIndiceCancion].imgcancion}`
     formEditarCanciones.addEventListener('submit', function (e){
         e.preventDefault()
-        
+        console.log(listaCanciones[buscarIndiceCancion].id)
         listaCanciones[buscarIndiceCancion].nombre=Enombre.value
         listaCanciones[buscarIndiceCancion].artista=Eartista.value
         listaCanciones[buscarIndiceCancion].album=Ealbum.value
@@ -132,7 +134,7 @@ window.editarCancion = (id)=>{
         listaCanciones[buscarIndiceCancion].categoria=Ecategoria.value
         listaCanciones[buscarIndiceCancion].duracion=Eduracion.value
         listaCanciones[buscarIndiceCancion].audio=Eaudio.value
-        listaCanciones[buscarIndiceCancion].imagen=Eimagen.value
+        listaCanciones[buscarIndiceCancion].imgcancion=Eimagen.value
         guardarEnLocalStorage()
         location.reload()
     })
@@ -177,19 +179,3 @@ cargaInicial()
 
 btnAgregarCancion.addEventListener('click',mostrarModal)
 formCanciones.addEventListener('submit',agregarNuevaCancion)
-
-
-//Autorizar al admin
-
-function checkAdminAccess() {
-    
-    const userRole = localStorage.getItem("userRole");
-
-    if (userRole !== "admin") {
-    
-        window.location.href = "../index.html"; 
-    }
-}
-
-
-window.onload = checkAdminAccess;
