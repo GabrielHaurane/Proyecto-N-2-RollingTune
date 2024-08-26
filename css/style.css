@@ -46,15 +46,9 @@ footer {
 }
 
 @media (max-width: 600px) {
-<<<<<<< HEAD
   .btnCategoria {
     padding: 6px 12px;
     font-size: 12px;
-=======
-  .btn {
-    padding: 6px 12px; /* Ajusta el tamaño del botón para pantallas pequeñas */
-    font-size: 12px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
->>>>>>> navFooter
   }
 }
 
