@@ -81,13 +81,13 @@
                         <form>
                             <div class="mb-3">
                                 <label for="nombrecancion" class="form-label">Nombre Cancion</label>
-                                <input class="form-control" id="nombrecancion" type="text">
+                                <input class="form-control" id="nombrecancion" type="text" required>
                                 <div class="valid-feedback">Es valido</div>
                                 <div class="invalid-feedback">no es valido</div>
                             </div>
                             <div class="mb-3">
                                 <label for="artista" class="form-label">Artista</label>
-                                <input class="form-control" id="artista" type="text">
+                                <input class="form-control" id="artista" type="text" required>
                             </div>
                             <div class="mb-3">
                                 <label for="album" class="form-label">Album</label>
@@ -95,23 +95,23 @@
                             </div>
                             <div class="mb-3">
                                 <label for="fecha" class="form-label">Fecha</label>
-                                <input class="form-control" id="fecha" type="fecha">
+                                <input class="form-control" id="fecha" type="date" required>
                             </div>
                             <div class="mb-3">
                                 <label for="categoria" class="form-label">Categoria</label>
-                                <input class="form-control" id="categoria" type="tel">
+                                <input class="form-control" id="categoria" type="text">
                             </div>
                             <div class="mb-3">
                                 <label for="duracion" class="form-label">Duracion</label>
-                                <input class="form-control" id="duracion" type="text">
+                                <input class="form-control" id="duracion" type="number" min="1" required>
                             </div>
                             <div class="mb-3">
                                 <label for="audio" class="form-label">Audio</label>
-                                <input class="form-control" id="audio" type="audio">
+                                <input class="form-control" id="audio" type="file" accept="audio/*" required>
                             </div>
                             <div class="mb-3">
                                 <label for="imagen" class="form-label">Imagen</label>
-                                <input class="form-control" id="imagen" type="text">
+                                <input class="form-control" id="imagen" type="file" accept="image/*">
                             </div>
                             <button class="btn btn-primary" type="submit" id="btnguardar">Guardar</button>
                         </form>
