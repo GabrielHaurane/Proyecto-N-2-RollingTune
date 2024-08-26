@@ -1,5 +1,6 @@
 import { funcionScroll } from "./navbar.js";
 funcionScroll;
+
   const playButton1 = document.getElementById('play-button-1');
   const audio1 = document.getElementById('audio-1');
   const playButton2 = document.getElementById('play-button-2');

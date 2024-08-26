@@ -1,5 +1,8 @@
 import { funcionScroll } from "./navbar.js";
 funcionScroll;
+import { loguear, validateEmailFormat } from "./login.js";
+loguear;
+validateEmailFormat;
 const paramId = new URLSearchParams(window.location.search).get('id');  
 const listaCanciones = JSON.parse(localStorage.getItem('agendaKey')) || [];
 const cancionBuscada = listaCanciones.find((cancion)=>cancion.id === paramId);
@@ -11,7 +14,7 @@ const cancionBuscada = listaCanciones.find((cancion)=>cancion.id === paramId);
 
 const dibujarCancion = ()=>{
     const contenedor = document.querySelector(".contenedorCancion")
-    console.log(contenedor);
+    
     contenedor.innerHTML = `<div class="container w-75 sectionDetalles mt-5 card mb-3">
             <div class=" row g-0">
                 <div class="w-25 justify-content-center d-flex flex-column col-md-4">

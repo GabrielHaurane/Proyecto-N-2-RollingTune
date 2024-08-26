@@ -22,7 +22,7 @@ const album = document.querySelector("#album")
 const fecha = document.querySelector("#fecha")
 const categoria = document.querySelector("#categoria")
 const duracion = document.querySelector("#duracion")
-const audio = document.querySelector("#audio")
+const fileaudio = document.querySelector("#audio")
 const imagen = document.querySelector("#imagen")
 const Enombre = document.querySelector("#nombreEditarCancion")
 const Eartista = document.querySelector("#editarArtista")
@@ -61,7 +61,7 @@ const agregarNuevaCancion = (e)=>{
         fecha.value,
         categoria.value,
         duracion.value,
-        audio.value,
+        fileaudio.value,
         imagen.value
     )
     listaCanciones.push(nuevaCancion)
@@ -86,11 +86,11 @@ window.borrarCancion = (id)=>{
         cancelButtonText: "Cancelar"
       }).then((result) => {
           if (result.isConfirmed) {
-              console.log(id)
+              
               
               const posicionCancion = listaCanciones.findIndex((cancion) => cancion.id === id)
 
-            console.log(posicionCancion)
+            
 
             listaCanciones.splice(posicionCancion,1)
             
@@ -124,7 +124,7 @@ window.editarCancion = (id)=>{
     Eimagen.value = `${listaCanciones[buscarIndiceCancion].imgcancion}`
     formEditarCanciones.addEventListener('submit', function (e){
         e.preventDefault()
-        console.log(listaCanciones[buscarIndiceCancion].id)
+        
         listaCanciones[buscarIndiceCancion].nombre=Enombre.value
         listaCanciones[buscarIndiceCancion].artista=Eartista.value
         listaCanciones[buscarIndiceCancion].album=Ealbum.value
@@ -177,3 +177,19 @@ cargaInicial()
 
 btnAgregarCancion.addEventListener('click',mostrarModal)
 formCanciones.addEventListener('submit',agregarNuevaCancion)
+
+
+//Autorizar al admin
+
+function checkAdminAccess() {
+    
+    const userRole = localStorage.getItem("userRole");
+
+    if (userRole !== "admin") {
+    
+        window.location.href = "../index.html"; 
+    }
+}
+
+
+window.onload = checkAdminAccess;
